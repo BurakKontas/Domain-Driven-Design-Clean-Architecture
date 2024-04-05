@@ -1,0 +1,24 @@
+@host = https://localhost:7110
+
+
+POST {{host}}/api/authentication/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email" : "test@test.com",
+  "password" : "password",
+  "firstname" : "John",
+  "lastname" : "Doe"
+}
+
+###
+
+POST {{host}}/api/authentication/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "email" : "test@test.com",
+  "password" : "password"
+}
