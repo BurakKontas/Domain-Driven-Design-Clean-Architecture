@@ -1,9 +1,8 @@
-﻿namespace DDDAPI.Application.Services.Authentication;
+﻿using DDDAPI.Domain.Entities;
+
+namespace DDDAPI.Application.Services.Authentication;
 
 public record AuthenticationResult(
-    Ulid Id,
-    string FirstName,
-    string LastName,
-    string Email,
+    User User,
     string Token
 );

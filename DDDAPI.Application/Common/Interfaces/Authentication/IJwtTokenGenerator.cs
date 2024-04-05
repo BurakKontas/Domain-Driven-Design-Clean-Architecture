@@ -1,7 +1,9 @@
-﻿namespace DDDAPI.Application.Common.Interfaces.Authentication;
+﻿using DDDAPI.Domain.Entities;
+
+namespace DDDAPI.Application.Common.Interfaces.Authentication;
 
 public interface IJwtTokenGenerator
 {
-    string GenerateToken(Ulid userId, string firstName, string lastName);
+    string GenerateToken(User user);
 }
 
